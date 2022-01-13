@@ -1,0 +1,49 @@
+{% extends "base.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block header %} Show all vlans/racks {% endblock %}
+
+{% block buttonName %} Show all {% endblock %}
+
+{% block radioButton1 %} 
+  <input class="form-check-input" type="radio" name="radioBtn" id="vlanApi" value="opt_vlan">
+{% endblock %}
+
+{% block radioButton2 %}
+  <input class="form-check-input" type="radio" name="radioBtn" id="rackApi" value="opt_rack">
+{% endblock %}
+
+{% block content %} 
+
+  {% if request.form['radioBtn'] == "opt_vlan" %}
+    {% for vlan in response %}
+    <ul class="list-group list-group-flush" id="output">
+      {% for key, value in vlan.items() %}
+        <h5> {{ key.capitalize()  }} </h5>
+        <li class="list-group-item">{{ value }}</li>
+      {% endfor %}
+    </ul>
+    <br><br><br>
+    {% endfor %}
+  {% endif%}
+
+  {% if request.form['radioBtn'] == "opt_rack" %}
+    {% for rack in response %}
+    <ul class="list-group list-group-flush" id="output">
+      {% for key, value in rack.items() %}
+          <h5> {{ key.capitalize()  }} </h5>
+          {% if value is mapping %} 
+            {% for k, v in value.items() %}
+            <li class="list-group-item">{{k}}: {{v}}</li>
+            {% endfor %}
+          {% else %}
+            <li class="list-group-item">{{ value }}</li>
+          {% endif %}
+        {% endfor %}
+    </ul>
+    <br><br><br>
+    {% endfor %}
+  {% endif%}
+
+{% endblock %}

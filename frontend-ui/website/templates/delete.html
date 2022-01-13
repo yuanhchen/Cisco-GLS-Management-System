@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %} Delete {% endblock %}
+
+{% block header %} Delete a vlan/rack {% endblock %}
+
+{% block buttonName %} Delete {% endblock %}
+
+
+{% block radioButton1 %} 
+  <input class="form-check-input" type="radio" name="radioBtn" id="vlanApi" value="opt_vlan" onclick="changeInputForm(this)">
+{% endblock %}
+
+{% block radioButton2 %}
+  <input class="form-check-input" type="radio" name="radioBtn" id="rackApi" value="opt_rack" onclick="changeInputForm(this)">
+{% endblock %}
