@@ -34,42 +34,42 @@ python main.py
 ```
 
 > * The home page of this app
-![image not found](./screen-shot/home.png)
+![image not found](./screen-shots/home.png)
 
 > * Sample response for retrieving all records
-![image not found](./screen-shot/home-sample-response.png)
+![image not found](./screen-shots/home-sample-response.png)
 
 > * The get page of this app
-![image not found](./screen-shot/get.png)
+![image not found](./screen-shots/get.png)
 
 > * Sample response for retrieving one record
-![image not found](./screen-shot/get-sample-response.png)
+![image not found](./screen-shots/get-sample-response.png)
 
 > * The create page of this app
-![image not found](./screen-shot/create.png)
+![image not found](./screen-shots/create.png)
 
 > * Sample input for creating a record
-![image not found](./screen-shot/create-sample-input.png)
+![image not found](./screen-shots/create-sample-input.png)
 
 > * Sample response for creating a record
-![image not found](./screen-shot/create-sample-response.png)
+![image not found](./screen-shots/create-sample-response.png)
 
 > * The sample update page of this app
-![image not found](./screen-shot/update-sample-input.png)
+![image not found](./screen-shots/update-sample-input.png)
 
 > * Retrieve data after update
 > * Under Switch location, the field is updated from 'new switch location' to 'newly updated switch location'
-![image not found](./screen-shot/get-after-update.png)
+![image not found](./screen-shots/get-after-update.png)
 
 > * The delete page of this app
-![image not found](./screen-shot/delete.png)
+![image not found](./screen-shots/delete.png)
 
 > * Sample input for delete page
-![image not found](./screen-shot/delete-sample-input.png)
+![image not found](./screen-shots/delete-sample-input.png)
 
 > * Sample response for delete page
-![image not found](./screen-shot/delete-sample-response.png)
+![image not found](./screen-shots/delete-sample-response.png)
 
 > * Now use the get page to retrieve a non-existed(deleted) record:
-![image not found](./screen-shot/get-after-delete.png)
+![image not found](./screen-shots/get-after-delete.png)
 
